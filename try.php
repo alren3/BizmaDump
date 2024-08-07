@@ -16,5 +16,5 @@ function getClientIp() {
 }
 
 $client_ip = getClientIp();
-echo "Client IP Address: " . $client_ip;
+echo json_encode(array("client_ip" => $client_ip));
 ?>
