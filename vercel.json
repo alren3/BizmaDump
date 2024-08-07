@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "try.php",
+      "use": "@vercel/php"
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/try.php" }
+  ]
+}
